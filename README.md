@@ -4,6 +4,13 @@ A small browser game about keeping electricity generation and demand balanced. A
 
 This is my first web development project under Chani Builds. I am building it step by step while learning HTML, JavaScript, CSS, and Git.
 
+## Play
+
+Play in your browser:
+[Power Balance](https://chankim-kor.github.io/power-balance/)
+
+Supports desktop and mobile browsers.
+
 ## Current Status
 
 The core gameplay and responsive interface are implemented. Public deployment and testing on a physical mobile device are the next steps.
@@ -68,5 +75,3 @@ power-balance/
 
 - Make controls and game rules easy to understand.
 - Playtest and adjust difficulty.
-- Verify gameplay on desktop and mobile browsers.
-- Deploy a publicly playable version.
