@@ -42,7 +42,7 @@ This game uses simplified rules and is not a physical power-grid simulator.
 No package installation or build step is required for the current version.
 
 1. Clone this repository or download and extract its ZIP archive.
-2. Keep `index.html` and `script.js` in the same folder.
+2. Keep `index.html`, `style.css`, and `script.js` in the same folder.
 3. Open `index.html` in a modern browser such as Chrome or Edge.
 
 The game starts automatically. Refreshing the page also resets it.
@@ -66,7 +66,6 @@ power-balance/
 
 ## Next Steps
 
-- Add CSS styling and responsive layouts.
 - Make controls and game rules easy to understand.
 - Playtest and adjust difficulty.
 - Verify gameplay on desktop and mobile browsers.
