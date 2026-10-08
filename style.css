@@ -142,6 +142,8 @@ button {
     color: #f1f5f9;
     font: inherit;
     cursor: pointer;
+
+    touch-action: manipulation;
 }
 
 button:hover {
