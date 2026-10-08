@@ -13,7 +13,7 @@ Supports desktop and mobile browsers.
 
 ## Current Status
 
-The core gameplay and responsive interface are implemented. Public deployment and testing on a physical mobile device are the next steps.
+The core gameplay and responsive interface are implemented. The game is deployed on GitHub Pages and has been tested on desktop and a physical mobile device.
 
 ## Features
 
