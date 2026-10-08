@@ -15,6 +15,7 @@ const generationElement = document.getElementById("generation");
 const demandElement = document.getElementById("demand");
 const balanceElement = document.getElementById("balance");
 const stabilityElement = document.getElementById("stability");
+const stabilityBarElement = document.getElementById("stability-bar");
 
 function renderGameStatus() {
     if (!isGameOver) {
@@ -23,6 +24,7 @@ function renderGameStatus() {
     else {
         gameStatusElement.textContent = "Game Over - Grid Collapsed!!";
     }
+    gameStatusElement.classList.toggle("game-over", isGameOver);
 }
 
 function renderTime() {
@@ -34,20 +36,22 @@ function renderScore() {
 }
 
 function renderGeneration() {
-    generationElement.textContent = "Generation: " + generation + " MW";
+    generationElement.textContent = generation + " MW";
 }
 
 function renderDemand() {
-    demandElement.textContent = "Demand: " + demand + " MW";
+    demandElement.textContent = demand + " MW";
 }
 
 function renderBalance() {
     const balance = generation - demand;
     balanceElement.textContent = "Balance: " + balance + " MW";
+    balanceElement.classList.toggle("warning", Math.abs(balance) > 5);
 }
 
 function renderStability() {
     stabilityElement.textContent = "Grid Stability: " + stability + "%";
+    stabilityBarElement.value = stability;
 }
 
 function startTimers() {
@@ -88,6 +92,7 @@ function render() {
     renderDemand();
     renderBalance();
     renderStability();
+    renderControls();
 }
 
 const decreaseTenButton = document.getElementById("decrease-ten-button");
@@ -141,6 +146,13 @@ function updateStability() {
     if (stability === 0) {
         endGame();
     }
+}
+
+function renderControls() {
+    increaseButton.disabled = isGameOver;
+    decreaseButton.disabled = isGameOver;
+    increaseTenButton.disabled = isGameOver;
+    decreaseTenButton.disabled = isGameOver;
 }
 
 decreaseTenButton.addEventListener("click", function () {

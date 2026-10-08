@@ -6,7 +6,7 @@ This is my first web development project under Chani Builds. I am building it st
 
 ## Current Status
 
-The core gameplay is implemented with a basic HTML interface. CSS styling and public deployment are planned.
+The core gameplay and responsive interface are implemented. Public deployment and testing on a physical mobile device are the next steps.
 
 ## Features
 
@@ -52,6 +52,7 @@ The game starts automatically. Refreshing the page also resets it.
 ```text
 power-balance/
 ├── index.html   # Page structure and controls
+├── style.css    # Styling and responsive layouts
 ├── script.js    # Game state, rules, events, and timers
 └── README.md    # Project overview and instructions
 ```
@@ -61,6 +62,7 @@ power-balance/
 - HTML for page structure
 - Vanilla JavaScript for gameplay and interaction
 - Git and GitHub for version control
+- CSS for styling and responsive layouts
 
 ## Next Steps
 

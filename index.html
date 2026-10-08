@@ -5,25 +5,48 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Power Balance | Chani Builds</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>    
-        <h1>Power Balance</h1>
-        <h2>How to Play</h2>
-        <p>Keep electricity generation and demand balanced</p>
-        <h2>Grid Status</h2>
-        <p id="game-status">Grid Running</p>
-        <p id="elapsed-time">Time: 0 s</p>
-        <p id="score">Score: 0</p>
-        <p id="generation">Generation: 80 MW</p>
-        <p id="demand">Demand: 80 MW</p>
-        <p id="balance">Balance: 0 MW</p>
-        <p id="stability">Grid Stability: 100%</p>
-        <h2>Generation Controls</h2>
-        <button id="decrease-ten-button" type="button">Decrease by 10 MW</button>
-        <button id="decrease-button" type="button">Decrease by 1 MW</button>
-        <button id="increase-button" type="button">Increase by 1 MW</button>
-        <button id="increase-ten-button" type="button">Increase by 10 MW</button>
-        <button id="restart-button" type="button">RESTART</button>
+    <body>
+        <main class="game">
+            <h1>Power Balance</h1>
+            <div class="instructions">
+                <h2>How to Play</h2>
+                <p>Keep electricity generation and demand balanced</p>
+                <p>Stay within ±5 MW to earn points.</p>
+            </div>
+            <div class="status-header">
+                <h2>Grid Status -</h2>
+                <p id="game-status">Grid Running</p>
+            </div>
+            <div class="session-stats">
+                <p id="elapsed-time">Time: 0 s</p>
+                <p id="score">Score: 0</p>
+            </div>
+            <p id="stability">Grid Stability: 100%</p>
+            <progress id="stability-bar" max="100" value="100" aria-label="Grid stability"></progress>
+            <div class="metrics">
+                <div class="metric">
+                    <p class="metric-label">Generation</p>
+                    <p id="generation" class="metric-value">80 MW</p>
+                </div>
+                <div class="metric">
+                    <p class="metric-label">Demand</p>
+                    <p id="demand" class="metric-value">80 MW</p>
+                </div>
+            </div>
+            <p id="balance">Balance: 0 MW</p>
+            <div class="control-panel">
+                <h2>Generation Controls</h2>
+                <div class="controls">
+                    <button id="decrease-button" type="button">-1 MW</button>
+                    <button id="increase-button" type="button">+1 MW</button>
+                    <button id="decrease-ten-button" type="button">-10 MW</button>
+                    <button id="increase-ten-button" type="button">+10 MW</button>
+                </div>
+                <button id="restart-button" type="button">RESTART</button>
+            </div>
+        </main>
         <script src="script.js"></script>
     </body>
 </html>
