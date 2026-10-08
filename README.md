@@ -36,6 +36,7 @@ Balance = Generation − Demand
 - A positive balance means generation exceeds demand.
 - A negative balance means generation is below demand.
 - Every game tick, an imbalance of 5 MW or less earns 10 points.
+- Every game tick, an imbalance greater than 5 MW reduces stability by 1 percentage point.
 - An imbalance greater than 5 MW reduces stability by 1 percentage point.
 - Stability starts at 100%. Reaching 0% ends the game.
 - Select Restart to begin a new game.
@@ -53,6 +54,17 @@ No package installation or build step is required for the current version.
 3. Open `index.html` in a modern browser such as Chrome or Edge.
 
 The game starts automatically. Refreshing the page also resets it.
+
+### Run with a Local Server
+
+If Python is installed, open a terminal in the project folder and run:
+
+```bash
+py -m http.server 8000 --bind 127.0.0.1
+```
+
+Open http://127.0.0.1:8000/ in your browser.
+Keep the terminal running while playing, and press Ctrl+C to stop the server.
 
 ## Project Structure
 
