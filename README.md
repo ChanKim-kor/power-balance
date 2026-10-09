@@ -4,6 +4,8 @@ A small browser game about keeping electricity generation and demand balanced. A
 
 This is my first web development project under Chani Builds. I am building it step by step while learning HTML, JavaScript, CSS, and Git.
 
+[Here's the review of my first project!](https://chanibuilds.wordpress.com/2026/10/09/building-and-shipping-power-balance/)
+
 ## Play
 
 Play in your browser:
